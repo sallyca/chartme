@@ -1,0 +1,10 @@
+%h2 Import IT heroes
+= form_tag import_itheros_path, multipart: true do
+  = file_field_tag :file
+  = submit_tag "Import"
+
+%br
+%br
+#it_chart{:style => "width: 560px; height: 500px;"}
+#golden_chart{:style => "width: 560px; height: 500px;"}
+

@@ -1,0 +1,77 @@
+<%= form_for(@ithero) do |f| %>
+  <% if @ithero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ithero.errors.count, "error") %> prohibited this ithero from being saved:</h2>
+
+      <ul>
+      <% @ithero.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :speciality %><br />
+    <%= f.text_field :speciality %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :spec_more %><br />
+    <%= f.text_field :spec_more %>
+  </div>
+  <div class="field">
+    <%= f.label :tenure %><br />
+    <%= f.text_field :tenure %>
+  </div>
+  <div class="field">
+    <%= f.label :tenure_current %><br />
+    <%= f.text_field :tenure_current %>
+  </div>
+  <div class="field">
+    <%= f.label :netwage %><br />
+    <%= f.number_field :netwage %>
+  </div>
+  <div class="field">
+    <%= f.label :wage_diff %><br />
+    <%= f.number_field :wage_diff %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :company_size %><br />
+    <%= f.text_field :company_size %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br />
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :education %><br />
+    <%= f.text_field :education %>
+  </div>
+  <div class="field">
+    <%= f.label :english %><br />
+    <%= f.text_field :english %>
+  </div>
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.text_field :date %>
+  </div>
+  <div class="field">
+    <%= f.label :user_agent %><br />
+    <%= f.text_field :user_agent %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
