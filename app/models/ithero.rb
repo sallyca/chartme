@@ -6,6 +6,10 @@ class Ithero < ActiveRecord::Base
   scope :kharkov, where(:city => 'Харьков')
   scope :lvov, where(:city => 'Львов')
 
+  scope :senior, where('speciality like ?','%Senior Software Engineer%')
+  scope :middle, where(:speciality => 'Software Engineer')
+  scope :junior, where('speciality like ?','%Junior Software Engineer%')
+
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
       Ithero.create! row.to_hash
