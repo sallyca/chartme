@@ -28,10 +28,6 @@ class Ithero < ActiveRecord::Base
     where(:language => speciality).where('speciality like ?','%Software Engineer%').average(:netwage)
   end
 
-  def self.average_for(speciality)
-    where(:language => speciality).where('speciality like ?','%Software Engineer%').average(:tenure)
-  end
-
   def self.average
    all.average(:netwage)
   end
