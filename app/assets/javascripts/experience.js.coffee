@@ -5,7 +5,7 @@ $ ->
                 type: 'bar'
             },
             title: {
-                text: 'Average tenure depending on role'
+                text: 'Average experience depending on role'
             },
             subtitle: {
                 text: 'Source: dou.ua'
