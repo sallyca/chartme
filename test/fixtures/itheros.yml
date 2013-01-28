@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  speciality: MyString
+  language: MyString
+  spec_more: MyString
+  tenure: MyString
+  tenure_current: MyString
+  netwage: 1
+  wage_diff: 1
+  city: MyString
+  company_size: MyString
+  gender: MyString
+  age: 1
+  education: MyString
+  english: MyString
+  date: MyString
+  user_agent: MyString
+
+two:
+  speciality: MyString
+  language: MyString
+  spec_more: MyString
+  tenure: MyString
+  tenure_current: MyString
+  netwage: 1
+  wage_diff: 1
+  city: MyString
+  company_size: MyString
+  gender: MyString
+  age: 1
+  education: MyString
+  english: MyString
+  date: MyString
+  user_agent: MyString
