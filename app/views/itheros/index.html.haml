@@ -8,14 +8,20 @@
     =". Средние зарплаты по основным специализациям выглядят так:"
   #it_chart.chart{:style => "width: 560px; height: 500px;"}
   .text
-    = "Если сравнивать это с декабрем 2011:"
+    = "Если сравнивать это с декабрем 2011, мы наблюдаем даже небольшое спад средней зарплаты, связано это с увеличением количества middle и junior разработчиков."
   #year_chart.chart{:style => "width: 560px; height: 500px;"}
+  .text
+    = "Поэтому посмотрим на зарплаты по синьорам и джуниорам. Здесь еще можно добавить их количество."
+  #srjr_chart.chart{:style => "width: 560px; height: 500px;"}
+  .text
+    = "А здесь — сколько надо опыта, чтобы им стать."
+  #xp_chart.chart{:style => "width: 560px; height: 300px;"}
+  .text 
+    ="Теперь посмотрим по городам."
+  #golden_chart.chart{:style => "width: 560px; height: 500px;"}
   .text
     ="Сравнение средних зарплат по другим специализациям."
   #other_chart.chart{:style => "width: 560px; height: 500px;"}
-  #golden_chart.chart{:style => "width: 560px; height: 500px;"}
-  #srjr_chart.chart{:style => "width: 560px; height: 500px;"}
-  #xp_chart.chart{:style => "width: 560px; height: 300px;"}
   .text
     ="График по половому признаку. Для значимости статистики, пришлость убрать питонисток и рубиcток, потому что их мало, а получают они много."
   #gender_chart.chart{:style => "width: 560px; height: 500px;"}
