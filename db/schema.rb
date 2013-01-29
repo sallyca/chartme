@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130128223344) do
+ActiveRecord::Schema.define(:version => 20130129233308) do
 
   create_table "itheros", :force => true do |t|
     t.string   "speciality"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130128223344) do
     t.datetime "updated_at",     :null => false
     t.string   "nothing"
     t.integer  "year"
+    t.string   "currency"
   end
 
 end

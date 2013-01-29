@@ -1,14 +1,17 @@
 #encoding: UTF-8
 class Ithero < ActiveRecord::Base
-  attr_accessible :nothing, :age, :city, :company_size, :date, :education, :english, :gender, :language, :netwage, :spec_more, :speciality, :tenure, :tenure_current, :user_agent, :wage_diff
+  attr_accessible :nothing, :age, :currency, :city, :company_size, :date, :education, :english, :gender, :language, :netwage, :spec_more, :speciality, :tenure, :tenure_current, :user_agent, :wage_diff
 
   scope :kiev, where(:city => 'Киев')
   scope :kharkov, where(:city => 'Харьков')
   scope :lvov, where(:city => 'Львов')
+  scope :dnepr, where(:city => 'Днепропетровск')
 
   scope :senior, where('speciality like ?','%Senior Software Engineer%')
   scope :middle, where(:speciality => 'Software Engineer')
   scope :junior, where('speciality like ?','%Junior Software Engineer%')
+
+  scope :dollar, where(:currency=>'d')
 
   scope :male, where(:gender=>'m')
   scope :female, where(:gender=>'f')
@@ -19,7 +22,7 @@ class Ithero < ActiveRecord::Base
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
       ithero=Ithero.create! row.to_hash
-      ithero.year=2011
+      ithero.year=2012
       ithero.save
     end
   end
