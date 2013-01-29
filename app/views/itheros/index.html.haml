@@ -1,7 +1,21 @@
-#it_chart{:style => "width: 560px; height: 500px;"}
-#year_chart{:style => "width: 560px; height: 500px;"}
-#other_chart{:style => "width: 560px; height: 500px;"}
-#golden_chart{:style => "width: 560px; height: 500px;"}
-#srjr_chart{:style => "width: 560px; height: 500px;"}
-#xp_chart{:style => "width: 560px; height: 500px;"}
-#gender_chart{:style => "width: 560px; height: 500px;"}
+#article
+  %h2 Обзор зарплат
+  .text
+    ="В ходе декабрьского зарплатного опроса было получено 4226 анкет, для сравнения прошлые опросы"
+    =link_to "здесь", "http://dou.ua/lenta/articles/developers-salaries-december-2011/" 
+    ="и"
+    =link_to "здесь", "http://dou.ua/lenta/work/salary-survey-report-oct-2010/" 
+    =". Средние зарплаты по основным специализациям выглядят так:"
+  #it_chart.chart{:style => "width: 560px; height: 500px;"}
+  .text
+    = "Если сравнивать это с декабрем 2011:"
+  #year_chart.chart{:style => "width: 560px; height: 500px;"}
+  .text
+    ="Сравнение средних зарплат по другим специализациям."
+  #other_chart.chart{:style => "width: 560px; height: 500px;"}
+  #golden_chart.chart{:style => "width: 560px; height: 500px;"}
+  #srjr_chart.chart{:style => "width: 560px; height: 500px;"}
+  #xp_chart.chart{:style => "width: 560px; height: 300px;"}
+  .text
+    ="График по половому признаку. Для значимости статистики, пришлость убрать питонисток и рубиcток, потому что их мало, а получают они много."
+  #gender_chart.chart{:style => "width: 560px; height: 500px;"}

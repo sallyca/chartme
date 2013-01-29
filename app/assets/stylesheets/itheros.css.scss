@@ -1,3 +1,24 @@
 // Place all the styles related to the itheros controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#article{
+  margin: 0 auto;
+  width:800px;
+  .chart{
+    margin: 5px auto 10px;
+    width: 560px;
+  }
+  .text{
+    font-family: arial, sans-serif;
+    font-size:15px;
+    padding: 10px;
+  }
+  h2{
+    font-family: arial, sans-serif;
+    font-size:30px;
+    color: #333333;
+    font-weight: bold;
+    outline-color: rgb(51, 51, 51);
+    padding: 10px;
+  }
+}

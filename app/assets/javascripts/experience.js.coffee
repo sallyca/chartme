@@ -2,7 +2,7 @@ $ ->
  new Highcharts.Chart({
             chart: {
                 renderTo: 'xp_chart',
-                type: 'bar'
+                type: 'column'
             },
             title: {
                 text: 'Average experience depending on role'
@@ -38,7 +38,7 @@ $ ->
                 align: 'right',
                 verticalAlign: 'top',
                 x: -10,
-                y: 350,
+                y: 50,
                 floating: true,
                 borderWidth: 1,
                 backgroundColor: '#FFFFFF',
