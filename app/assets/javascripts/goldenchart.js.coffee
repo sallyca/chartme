@@ -2,7 +2,7 @@ $ ->
  new Highcharts.Chart({
             chart: {
                 renderTo: 'golden_chart',
-                type: 'bar'
+                type: 'column'
             },
             title: {
                 text: 'Average salaries depending on the speciality and the city'
@@ -48,14 +48,14 @@ $ ->
                 enabled: false
             },
             series: [{
+                name: 'Kiev',
+                data: [2606, 2367, 1988, 2160, 2115, 2049, 1834]
+                }, {
                 name: 'Lviv',
                 data: [1386, 2294, 2084, 1969, 1830, 1609, 1537]
                 }, {
                 name: 'Kharkov',
                 data: [2130, 1469, 1480, 1650, 1719, 1724, 1291]
-                }, {
-                name: 'Kiev',
-                data: [2606, 2367, 1988, 2160, 2115, 2049, 1834]
 
             }]
         });
