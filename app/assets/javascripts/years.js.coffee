@@ -5,7 +5,7 @@ $ ->
                 type: 'bar'
             },
             title: {
-                text: 'Average salaries depending on the specialization'
+                text: 'Average salaries by speciality and date'
             },
             subtitle: {
                 text: 'Source: dou.ua'
@@ -48,10 +48,10 @@ $ ->
                 enabled: false
             },
             series: [{
-                name: 'Year 2011',
+                name: 'Dec 2011',
                 data: [2645, 1779, 1931, 1873, 1852, 1653, 2087, 1466, 1267]               
                 },{
-                name: 'Year 2012',
+                name: 'Dec 2012',
                 data: [2864, 2050, 1981, 1954, 1887, 1831, 1794, 1511, 1245]
             }]
         });

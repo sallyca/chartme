@@ -5,7 +5,7 @@ $ ->
                 type: 'column'
             },
             title: {
-                text: 'Average experience depending on role'
+                text: 'Average experience by role'
             },
             subtitle: {
                 text: 'Source: dou.ua'

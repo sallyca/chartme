@@ -5,7 +5,7 @@ $ ->
                 type: 'column'
             },
             title: {
-                text: 'Average salaries depending on the speciality and the city'
+                text: 'Average salaries by speciality and city'
             },
             subtitle: {
                 text: 'Source: dou.ua'
@@ -37,8 +37,8 @@ $ ->
                 layout: 'vertical',
                 align: 'right',
                 verticalAlign: 'top',
-                x: -10,
-                y: 350,
+                x: -50,
+                y: 70,
                 floating: true,
                 borderWidth: 1,
                 backgroundColor: '#FFFFFF',

@@ -5,7 +5,7 @@ $ ->
                 type: 'bar'
             },
             title: {
-                text: 'Average salaries depending on gender :)'
+                text: 'Gender inequality'
             },
             subtitle: {
                 text: 'Source: dou.ua'

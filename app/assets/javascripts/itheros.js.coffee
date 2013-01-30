@@ -5,7 +5,7 @@ $ ->
                 type: 'bar'
             },
             title: {
-                text: 'Average salaries depending on the specialization'
+                text: 'Average salaries by speciality'
             },
             subtitle: {
                 text: 'Source: dou.ua'
@@ -33,21 +33,11 @@ $ ->
                     }
                 }
             },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'top',
-                x: -10,
-                y: 350,
-                floating: true,
-                borderWidth: 1,
-                backgroundColor: '#FFFFFF',
-                shadow: true
-            },
             credits: {
                 enabled: false
             },
             series: [{
+                showInLegend: false, 
                 name: 'Year 2012',
                 data: [2864, 2050, 1981, 1954, 1887, 1831, 1794, 1511, 1245]
             }]

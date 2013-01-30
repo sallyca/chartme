@@ -6,7 +6,7 @@ $ ->
                 type: 'bar'
             },
             title: {
-                text: 'Average salaries depending on the specialization'
+                text: 'Average salaries by speciality'
             },
             subtitle: {
                 text: 'Source: dou.ua'
@@ -49,6 +49,7 @@ $ ->
                 enabled: false
             },
             series: [{
+                showInLegend: false, 
                 name: 'Year 2012',
                 data: [1385, 1383, 1775, 972, 1470, 932, 1047]
             }]

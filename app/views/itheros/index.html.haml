@@ -2,9 +2,16 @@
   %h2 Краткий обзор зарплат
   .text
     ="Зарплатный опрос, декабрь 2012, 4226 анкет, для сравнения прошлые опросы"
-    =link_to "здесь", "http://dou.ua/lenta/articles/developers-salaries-december-2011/" 
+    =link_to "май 2012,", "http://dou.ua/lenta/articles/developers-salaries-may-june-2012/"
+    =link_to "2011", "http://dou.ua/lenta/articles/developers-salaries-december-2011/" 
     ="и"
-    =link_to "здесь", "http://dou.ua/lenta/work/salary-survey-report-oct-2010/" 
+    =link_to "2010", "http://dou.ua/lenta/work/salary-survey-report-oct-2010/"
+    %br
+    = "Обработанные данные доступны в виде "
+    = link_to "виджета", "http://jobs.dou.ua/salaries/"
+    =", существуют также исходные данные на"
+    =link_to "github", 'https://github.com/imax/dou-salaries'
+    %br
     %br
     ="Средние зарплаты по основным специализациям выглядят сейчас так:"
   #it_chart.chart{:style => "width: 560px; height: 500px;"}
@@ -25,7 +32,11 @@
     ="Во Львове разработчики почти такие же дорогие, как в Киеве, в Харькове подешевле. Ещё дорого в Одессе, и подешевле в Донецке."
   #city_chart.chart{:style => "width: 800px; height: 500px;"}
   .text
-    ="Но в целом понятно, что рост зарплат никто не отменял, и какой он этот прирост? Тут еще график прироста будет."
+    ="Но в целом понятно, что рост зарплат никто не отменял, и дальше мы посмотрим на прирост, указанный в анкетах."
+  #increase_chart.chart{:style => "width: 560px; height: 350px;"}
+  .text
+    ="А также прибавка, посчитанная по разницам средних зарплат по годам."
+  #increase2_chart.chart{:style => "width: 560px; height: 350px;"}
   .text
     ="На закуску — сравнение средних зарплат по другим специализациям."
   #other_chart.chart{:style => "width: 560px; height: 500px;"}
