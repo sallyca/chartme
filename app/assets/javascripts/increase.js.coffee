@@ -5,7 +5,7 @@ $ ->
                 type: 'column'
             },
             title: {
-                text: 'Average increase in salaries'
+                text: 'Average increase in salaries 2011/2012'
             },
             subtitle: {
                 text: 'Source: dou.ua'
