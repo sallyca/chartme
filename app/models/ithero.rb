@@ -31,6 +31,10 @@ class Ithero < ActiveRecord::Base
     where(:language => speciality).where('speciality like ?','%Software Engineer%').average(:netwage)
   end
 
+  def self.average_for_pos(position)
+    where(:speciality=>position).average(:netwage)
+  end
+
   def self.diff_for(speciality)
     where(:language => speciality).where('speciality like ?','%Software Engineer%').average(:wage_diff)
   end
