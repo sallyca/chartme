@@ -16,7 +16,7 @@ class Ithero < ActiveRecord::Base
   scope :male, where(:gender=>'m')
   scope :female, where(:gender=>'f')
 
-  scope :pm, where('speciality like ?','%Project manager%')
+  scope :pm, where('speciality like ? or ?','%Project manager%', '%Technical Lead%')
   scope :qa, where('speciality like ?','%QA Engineer%')
 
   def self.import(file)
