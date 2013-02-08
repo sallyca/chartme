@@ -1,9 +1,11 @@
 Chartme::Application.routes.draw do
+  get "pages/home"
+
   resources :itheros do
     collection { post :import }
   end
 
-  root to: 'itheros#index'
+  root to: 'pages#home'
 
 
   # The priority is based upon order of creation:
