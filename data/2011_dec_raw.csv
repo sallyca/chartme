@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 nothing,age,gender,speciality,education,language,nothing,nothing,spec_more,tenure,tenure_current,netwage,currency,nothing,nothing,company_size,city,english,date,user_agent
+=======
+,Возраст,Пол,Должность,Образование,Язык программирования,Индустрия,Предметная область,Доп. специализация,Общий опыт работы,Опыт работы на текущем месте,Средняя зарплата в месяц,Валюта,Годовые премии и бонусы,Валюта,Размер компании,Город,Уровень английского,Дата заполнения,User-Agent
+>>>>>>> f5eb848a86359ab561988817950951c050e387ce
 ,26,m,Senior Software Engineer,Высшее,Java,Нету,,,5,5,2000,d,0,d,до 100 человек,Киев,средний,13/12/2011 13:40:02,Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/20100101 Firefox/8.0
 ,25,m,QA Tech Lead,Высшее,,Нету,,Manual QA,5.5,1.75,2800,d,0,d,до 10 человек,Харьков,продвинутый,13/12/2011 13:40:31,Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/20100101 Firefox/8.0.1
 ,30,m,Senior Software Engineer,Высшее,C,Нету,,,10 и более лет,2.5,4000,d,0,d,до 100 человек,Киев,ниже среднего,13/12/2011 13:40:40,Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.2.21) Gecko/20110830 Firefox/3.6.21 ( .NET CLR 3.5.30729; .NET4.0E)

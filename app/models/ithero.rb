@@ -5,6 +5,7 @@ class Ithero < ActiveRecord::Base
   scope :kiev, where(:city => 'Киев')
   scope :kharkov, where(:city => 'Харьков')
   scope :lvov, where(:city => 'Львов')
+
   scope :dnepr, where(:city => 'Днепропетровск')
 
   scope :senior, where('speciality like ?','%Senior Software Engineer%')
@@ -46,6 +47,5 @@ class Ithero < ActiveRecord::Base
   def self.average
    all.average(:netwage)
   end
-
   
 end

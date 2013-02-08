@@ -6,6 +6,7 @@ $ ->
             },
             title: {
                 text: 'Average salaries by speciality and city'
+
             },
             subtitle: {
                 text: 'Source: dou.ua'
@@ -56,6 +57,5 @@ $ ->
                 }, {
                 name: 'Kharkov',
                 data: [2130, 1469, 1531, 1562, 1789, 1719, 1207]
-
             }]
         });

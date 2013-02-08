@@ -1,8 +1,10 @@
 Chartme::Application.routes.draw do
+
   resources :githubers
 
 
   get "pages/home"
+
 
   resources :itheros do
     collection { post :import }
