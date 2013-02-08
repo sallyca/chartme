@@ -1,0 +1,41 @@
+<h1>Listing githubers</h1>
+
+<table>
+  <tr>
+    <th>Contributions</th>
+    <th>Followers</th>
+    <th>Interests</th>
+    <th>Language</th>
+    <th>Link</th>
+    <th>Location</th>
+    <th>Name</th>
+    <th>Reps</th>
+    <th>Username</th>
+    <th>Country</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @githubers.each do |githuber| %>
+  <tr>
+    <td><%= githuber.contributions %></td>
+    <td><%= githuber.followers %></td>
+    <td><%= githuber.interests %></td>
+    <td><%= githuber.language %></td>
+    <td><%= githuber.link %></td>
+    <td><%= githuber.location %></td>
+    <td><%= githuber.name %></td>
+    <td><%= githuber.reps %></td>
+    <td><%= githuber.username %></td>
+    <td><%= githuber.country %></td>
+    <td><%= link_to 'Show', githuber %></td>
+    <td><%= link_to 'Edit', edit_githuber_path(githuber) %></td>
+    <td><%= link_to 'Destroy', githuber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Githuber', new_githuber_path %>

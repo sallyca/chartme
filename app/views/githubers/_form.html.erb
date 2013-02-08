@@ -1,0 +1,57 @@
+<%= form_for(@githuber) do |f| %>
+  <% if @githuber.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@githuber.errors.count, "error") %> prohibited this githuber from being saved:</h2>
+
+      <ul>
+      <% @githuber.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contributions %><br />
+    <%= f.text_field :contributions %>
+  </div>
+  <div class="field">
+    <%= f.label :followers %><br />
+    <%= f.number_field :followers %>
+  </div>
+  <div class="field">
+    <%= f.label :interests %><br />
+    <%= f.text_field :interests %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :reps %><br />
+    <%= f.number_field :reps %>
+  </div>
+  <div class="field">
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

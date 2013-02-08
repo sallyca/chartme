@@ -1,3 +1,3 @@
 class Githuber < ActiveRecord::Base
-  attr_accessible :contributions, :followers, :interest, :language, :link, :location, :name, :reps, :username
+  attr_accessible :contributions, :country, :followers, :interests, :language, :link, :location, :name, :reps, :username
 end

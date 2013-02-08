@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130129233308) do
+ActiveRecord::Schema.define(:version => 20130208142003) do
+
+  create_table "githubers", :force => true do |t|
+    t.string   "contributions"
+    t.integer  "followers"
+    t.string   "interests"
+    t.string   "language"
+    t.string   "link"
+    t.string   "location"
+    t.string   "name"
+    t.integer  "reps"
+    t.string   "username"
+    t.string   "country"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "itheros", :force => true do |t|
     t.string   "speciality"
