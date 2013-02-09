@@ -57,6 +57,8 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    paloma (1.2.5)
+      jquery-rails
     pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.4)
@@ -113,6 +115,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
+  paloma
   pg
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)

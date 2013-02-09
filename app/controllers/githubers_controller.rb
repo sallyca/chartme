@@ -1,4 +1,9 @@
 class GithubersController < ApplicationController
+
+  def import
+    Githuber.import(params[:file])
+    redirect_to root_url, notice: "Heroes imported."
+  end
   # GET /githubers
   # GET /githubers.json
   def index
