@@ -1,12 +1,83 @@
 #article
+  %h1
+    ="Github: топ-рейтинг и минута славы"
+  .text
+    ="Короткое вступление [...]"
+  %h2 Russia
+  .text
+    ="В России цвет Github пишет почти на всех языках, живут в основном в Москве и Петербурге, но иногда и в Омске (например, Quarx2k)"
   #line_bar.chart{:style => "width: 860px; height: 500px;"}
   .text
-    ="Followers graph for bobuk"
-  =image_tag('bobuk.png')
+    ="Российский клуб по интересам:"
+  %table
+    %th On Github
+    %th Interests
+    - Githuber.where(:country=>'Russia').each do |user|
+      %tr
+        %td
+          =link_to user.username, user.link
+        %td
+          =user.contributions
+  %h2 Ukraine
+  .text
+    ="В Украине, почти все из Киева, правда победитель (paulmillr) по непроверенным данным — из Харькова, а BloodAxe — из Одессы."
   #line_bar_ua.chart{:style => "width: 860px; height: 500px;"}
   .text
-    ="Followers graph for Paul Miller"
-    = link_to "http://dou.ua/users/paulmillr/", "http://dou.ua/users/paulmillr/"
-  =image_tag('paulmlr.png')
+    ="Их есть у нас на ДОУ:"
+    %p
+      ="http://dou.ua/users/paulmillr/"
+    %p
+      ="http://dou.ua/users/mourner/"
+    %p
+      ="http://dou.ua/users/alexey-kachayev/"
+    %p
+      ="http://dou.ua/users/piranha"
+    %p
+      ="/http://dou.ua/users/serge-koval"
+    %p
+      ="/http://dou.ua/users/alexbeletsky"
+    %p
+      ="/http://dou.ua/users/chaliy/"
+  .text
+    ="Украинский клуб по интересам:"
+  %table
+    %th On Github
+    %th Interests
+    - Githuber.where(:country=>'Ukraine').each do |user|
+      %tr
+        %td
+          =link_to user.username, user.link
+        %td
+          =user.contributions
+  %h2 Belarus
+  .text
+    ="Белоруссия это, конечно же, Минск, попадается ещё Хродна (nostra13)."
   #line_bar_bel.chart{:style => "width: 860px; height: 500px;"}
+  .text
+    ="Белорусский клуб по интересам:"
+  %table
+    %th On Github
+    %th Interests
+    - Githuber.where(:country=>'Belarus').each do |user|
+      %tr
+        %td
+          =link_to user.username, user.link
+        %td
+          =user.contributions
+  %h2 Game
+  .text
+    = "В судьи кто? Т.е. кто же фолловеры? Возьмем для топов России и Украины. Можете нарисовать сами для кого угодно, используя вот эту"
+    = link_to "простую штуку", "https://github.com/ezgraphs/R-Programs/blob/master/github_followers.R"
+    %h4
+      ="Github Followers graph for Grigory Bakunov as bobuk (в лэйауте Fruchterman-Reingold)"
+  =image_tag('bobuk.png', :size => "1200x600")
+  .text
+    %h4
+      ="Github Followers graph for Paul Miller (в лэйауте Kamada-Kawai)"
+    = link_to "http://dou.ua/users/paulmillr/", "http://dou.ua/users/paulmillr/"
+  =image_tag('paulmlr.png', :size => "1200x600")
+  .text
+    ="И это вроде как минута славы, попробуйте найти себя :)"
+
+
 

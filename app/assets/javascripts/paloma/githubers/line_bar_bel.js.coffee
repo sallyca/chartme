@@ -60,5 +60,25 @@ $ ->
           color: '#89A54E',
           type: 'spline',
           data: [89, 61, 2, 89, 15]   
+      },
+      {
+          type: 'pie',
+          name: 'Total consumption',
+          data: [{
+              name: 'Java',
+              y: 1,
+              color: '#4572A7' 
+          }, {
+              name: 'Ruby',
+              y: 3,
+              color: '#AA4643' 
+          }, {
+              name: 'C#',
+              y: 1,
+              color: '#89A54E'
+          }]
+          center: [600, 30],
+          size: 100,
+          showInLegend: false
       }]
   });

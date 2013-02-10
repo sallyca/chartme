@@ -11,9 +11,9 @@ $ ->
           text: 'Source: dou.ua'
       },
       xAxis: [{
-          categories: ["Grigory Bakunov", "Fedor Indutny", "Nicholas Semendyaev", "Sergey Chikuyonok", "Alexander Makarov", "Max Lapshin", " Andrey Sitnik", " Nikita Vasilyev", "Yaroslav Markin", "Vadim Makeev"]
+          categories: ["Grigory Bakunov (bobuk)", "Fedor Indutny (indutny)", "Nicholas Semendyaev (Quarx2k)", "Sergey Chikuyonok (sergeche)", "Alexander Makarov (samdark)", "Max Lapshin (maxlapshin)", " Andrey Sitnik (ai)", " Nikita Vasilyev (NV)", "Yaroslav Markin (yaroslav)", "Vadim Makeev (pepelsbey)"]
       }],
-      yAxis: [{ 
+      yAxis: [{
           labels: {
               style: {
                   color: '#89A54E'
@@ -44,7 +44,7 @@ $ ->
           align: 'left',
           x: 120,
           verticalAlign: 'top',
-          y: 100,
+          y: 60,
           floating: true,
           backgroundColor: '#FFFFFF'
       },
@@ -60,5 +60,49 @@ $ ->
           color: '#89A54E',
           type: 'spline',
           data: [16, 96, 43, 26, 27, 31, 23, 62, 12, 19] 
+      },
+      {
+          type: 'pie',
+          name: 'Total consumption',
+          data: [{
+              name: 'Python (bobuk)',
+              y: 1,
+              color: '#4572A7' 
+          }, {
+              name: 'Ruby (yaroslav, NV, ai, maxlapshin)',
+              y: 4,
+              color: '#AA4643' 
+          }, {
+              name: 'Javascript',
+              y: 4,
+              color: '#89A54E'
+          }, {
+              name: 'Coffeescript',
+              y: 2,
+              color: Highcharts.getOptions().colors[3]
+          }, {
+              name: 'C',
+              y: 2,
+              color: Highcharts.getOptions().colors[4] 
+          }, {
+              name: 'C++',
+              y: 1,
+              color: Highcharts.getOptions().colors[5]
+          }, {
+              name: 'Erlang',
+              y: 1,
+              color: Highcharts.getOptions().colors[6]
+          }, {
+              name: 'Java',
+              y: 1,
+              color: Highcharts.getOptions().colors[5]
+          }, {
+              name: 'PHP',
+              y: 1,
+              color: Highcharts.getOptions().colors[6] 
+          }]
+          center: [400, 100],
+          size: 100,
+          showInLegend: false
       }]
   });

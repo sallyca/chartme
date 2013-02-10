@@ -11,9 +11,9 @@ $ ->
           text: 'Source: dou.ua'
       },
       xAxis: [{
-          categories: ["Paul Miller ", "Vladimir Agafonkin", "Alexey Kachayev ", "Alexander Solovyov ", "Serge Koval ", "Kyrylo Mikos", "Alexander Beletsky  ", "Eugene Khvedchenya", "Sergey Pimenov", "Mike Chaliy"] 
+          categories: ["Paul Miller (paulmillr)", "Vladimir Agafonkin (mourner)", "Alexey Kachayev (kachayev)", "Alexander Solovyov (piranha)", "Serge Koval (mrjoes)", "Kyrylo Mikos (mik9)", "Alexander Beletsky (alexander beletsky)", "Eugene Khvedchenya (BloodAxe)", "Sergey Pimenov (olton)", "Mike Chaliy (chaliy)"] 
       }],
-      yAxis: [{ 
+      yAxis: [{
           labels: {
               style: {
                   color: '#89A54E'
@@ -59,6 +59,37 @@ $ ->
           name: 'Repositories',
           color: '#89A54E',
           type: 'spline',
-          data: [24, 12, 15, 33, 16, 32, 33, 10, 2, 47]  
+          data: [24, 12, 15, 33, 16, 32, 33, 10, 2, 47]
+      },
+      {
+          type: 'pie',
+          name: 'Total consumption',
+          data: [{
+              name: 'Python',
+              y: 2,
+          }, {
+              name: 'Javascript',
+              y: 4,
+              color: '#89A54E'
+          }, {
+              name: 'C#',
+              y: 1,
+              color: Highcharts.getOptions().colors[3]
+          }, {
+              name: 'C',
+              y: 1,
+              color: Highcharts.getOptions().colors[4] 
+          }, {
+              name: 'C++',
+              y: 1,
+              color: Highcharts.getOptions().colors[5]
+          }, {
+              name: 'PHP, HTML/CSS',
+              y: 1,
+              color: Highcharts.getOptions().colors[6] 
+          }]
+          center: [600, 70],
+          size: 100,
+          showInLegend: false
       }]
   });
