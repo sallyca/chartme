@@ -1,24 +1,24 @@
 #article
   %h1
-    ="Github Top Ten"
+    ="Github Топ 10"
   .text
     ="Короткое вступление [...]"
-  %h2 Russia
+  %h2 Россия
   .text
     ="Для начала, немного про Россию. В России цвет Github пишет почти на всех языках, живут в основном в Москве и Петербурге, но иногда и в Омске (например, Quarx2k)"
   #line_bar.chart{:style => "width: 860px; height: 500px;"}
   .text
     ="Российский клуб по интересам:"
   %table
-    %th On Github
-    %th Interests
+    %th На Github
+    %th Интересы
     - Githuber.where(:country=>'Russia').each do |user|
       %tr
         %td
           =link_to user.username, user.link
         %td
           =user.contributions
-  %h2 Ukraine
+  %h2 Украина
   .text
     ="Страна должна знать своих героев. В Украине, почти все из Киева, правда победитель (paulmillr) по непроверенным данным — из Харькова, а BloodAxe — из Одессы."
   #line_bar_ua.chart{:style => "width: 860px; height: 500px;"}
@@ -41,39 +41,39 @@
   .text
     ="Украинский клуб по интересам:"
   %table
-    %th On Github
-    %th Interests
+    %th На Github
+    %th Интересы
     - Githuber.where(:country=>'Ukraine').each do |user|
       %tr
         %td
           =link_to user.username, user.link
         %td
           =user.contributions
-  %h2 Belarus
+  %h2 Белоруссия
   .text
     ="Белоруссия это, конечно же, Минск, попадается ещё Хродна (nostra13)."
   #line_bar_bel.chart{:style => "width: 860px; height: 500px;"}
   .text
     ="Белорусский клуб по интересам:"
   %table
-    %th On Github
-    %th Interests
+    %th На Github
+    %th Интересы
     - Githuber.where(:country=>'Belarus').each do |user|
       %tr
         %td
           =link_to user.username, user.link
         %td
           =user.contributions
-  %h2 Game
+  %h2 Поиграем
   .text
     = "В судьи кто? Т.е. кто же фолловеры? Возьмем для топов России и Украины. Можете нарисовать сами для кого угодно, используя вот эту"
     = link_to "простую штуку", "https://github.com/ezgraphs/R-Programs/blob/master/github_followers.R"
     %h4
-      ="Github Followers graph for Grigory Bakunov as bobuk (в лэйауте Fruchterman-Reingold)"
+      ="Github, граф фолловеров для Grigory Bakunov as bobuk (отрисовано по алгоритму Fruchterman-Reingold)"
   =image_tag('bobuk.png', :size => "1200x600")
   .text
     %h4
-      ="Github Followers graph for Paul Miller (в лэйауте Kamada-Kawai)"
+      ="Github, граф фолловеров для Paul Miller (отрисовано по алгоритму Kamada-Kawai)"
     = link_to "http://dou.ua/users/paulmillr/", "http://dou.ua/users/paulmillr/"
   =image_tag('paulmlr.png', :size => "1200x600")
   .text

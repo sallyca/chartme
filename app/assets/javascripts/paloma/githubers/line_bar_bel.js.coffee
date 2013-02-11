@@ -11,9 +11,9 @@ $ ->
           text: 'Source: dou.ua'
       },
       xAxis: [{
-          categories: ["Sergey Avseyev", "Sergey Nartimov", "Sergey Tarasevich", "Vasiliy Ermolovich", "Eugeny Pankov"]
+          categories: ["Sergey Avseyev (avsej)", "Sergey Nartimov (lest)", "Sergey Tarasevich (nostra13)", "Vasiliy Ermolovich (nashby)", "Eugeny Pankov (Eugeny)"]
       }],
-      yAxis: [{ 
+      yAxis: [{
           labels: {
               style: {
                   color: '#89A54E'
@@ -58,22 +58,22 @@ $ ->
       }, {
           name: 'Repositories',
           color: '#89A54E',
-          type: 'spline',
+          type: 'column',
           data: [89, 61, 2, 89, 15]   
       },
       {
           type: 'pie',
           name: 'Total consumption',
           data: [{
-              name: 'Java',
+              name: 'Java (nostra13)',
               y: 1,
               color: '#4572A7' 
           }, {
-              name: 'Ruby',
+              name: 'Ruby (avsej, lest, nashby)',
               y: 3,
               color: '#AA4643' 
           }, {
-              name: 'C#',
+              name: 'C# (Evgeny)',
               y: 1,
               color: '#89A54E'
           }]

@@ -58,7 +58,7 @@ $ ->
       }, {
           name: 'Repositories',
           color: '#89A54E',
-          type: 'spline',
+          type: 'column',
           data: [16, 96, 43, 26, 27, 31, 23, 62, 12, 19] 
       },
       {
@@ -73,33 +73,33 @@ $ ->
               y: 4,
               color: '#AA4643' 
           }, {
-              name: 'Javascript',
+              name: 'Javascript (indutny, NV, pepelsbey)',
               y: 4,
               color: '#89A54E'
           }, {
-              name: 'Coffeescript',
+              name: 'Coffeescript (ai, sergeche)',
               y: 2,
               color: Highcharts.getOptions().colors[3]
           }, {
-              name: 'C',
+              name: 'C (Quarx2k, indutny)',
               y: 2,
               color: Highcharts.getOptions().colors[4] 
           }, {
-              name: 'C++',
+              name: 'C++ (indutny)',
               y: 1,
               color: Highcharts.getOptions().colors[5]
           }, {
-              name: 'Erlang',
+              name: 'Erlang (maxlapshin)',
               y: 1,
               color: Highcharts.getOptions().colors[6]
           }, {
-              name: 'Java',
+              name: 'Java (sergeche)',
               y: 1,
-              color: Highcharts.getOptions().colors[5]
+              color: Highcharts.getOptions().colors[7]
           }, {
-              name: 'PHP',
+              name: 'PHP (samdark)',
               y: 1,
-              color: Highcharts.getOptions().colors[6] 
+              color: Highcharts.getOptions().colors[8] 
           }]
           center: [400, 100],
           size: 100,
