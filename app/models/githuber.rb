@@ -4,7 +4,7 @@ class Githuber < ActiveRecord::Base
   def self.import(file)
     CSV.foreach(file.path, headers: true) do |row|
       githuber = Githuber.create! row.to_hash
-      githuber.country = 'Belarus'
+      githuber.country = 'Russia'
       githuber.save
     end
   end
