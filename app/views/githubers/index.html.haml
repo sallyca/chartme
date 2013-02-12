@@ -25,7 +25,18 @@
     ="Страна должна знать своих героев. В Украине, почти все из Киева, правда победитель (paulmillr) по непроверенным данным — из Харькова, а BloodAxe — из Одессы. Самые популярные языки Javascript и Python."
   #line_bar_ua.chart{:style => "width: 860px; height: 500px;"}
   .text
-    ="Они (почти все) есть на ДОУ:"
+    ="Украинский клуб по интересам:"
+  %table
+    %th На Github
+    %th Интересы
+    - Githuber.where(:country=>'Ukraine').each do |user|
+      %tr
+        %td
+          =link_to user.username, user.link
+        %td
+          =user.contributions
+  .text
+    ="И они (почти все) есть на ДОУ:"
     %p
       ="http://dou.ua/users/paulmillr/"
     %p
@@ -40,17 +51,6 @@
       ="/http://dou.ua/users/alexbeletsky"
     %p
       ="/http://dou.ua/users/chaliy/"
-  .text
-    ="Украинский клуб по интересам:"
-  %table
-    %th На Github
-    %th Интересы
-    - Githuber.where(:country=>'Ukraine').each do |user|
-      %tr
-        %td
-          =link_to user.username, user.link
-        %td
-          =user.contributions
   %h2 Белоруссия
   .text
     ="Белоруссия выбирает Ruby, Java и C#. Пишут в основном в Минске, попадается ещё Гродно (nostra13)."
