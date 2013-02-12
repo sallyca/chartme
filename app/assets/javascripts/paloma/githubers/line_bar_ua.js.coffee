@@ -11,7 +11,7 @@ $ ->
           text: 'Source: dou.ua'
       },
       xAxis: [{
-          categories: ["Paul Miller (paulmillr)", "Vladimir Agafonkin (mourner)", "Alexey Kachayev (kachayev)", "Alexander Solovyov (piranha)", "Serge Koval (mrjoes)", "Kyrylo Mikos (mik9)", "Alexander Beletsky (alexander beletsky)", "Eugene Khvedchenya (BloodAxe)", "Sergey Pimenov (olton)", "Mike Chaliy (chaliy)"] 
+          categories: ["Paul Miller (paulmillr)", "Vladimir Agafonkin (mourner)", "Alexey Kachayev (kachayev)", "Alexander Solovyov (piranha)", "Serge Koval (mrjoes)","Alexander Beletsky (alexander beletsky)", "Kyrylo Mikos (mik9)", "Eugene Khvedchenya (BloodAxe)", "Sergey Pimenov (olton)", "Mike Chaliy (chaliy)"] 
       }],
       yAxis: [{
           labels: {
@@ -53,13 +53,13 @@ $ ->
           color: '#4572A7',
           type: 'column',
           yAxis: 1,
-          data: [222, 146, 93, 89, 84, 76, 76, 61, 54, 54] 
+          data: [253, 153, 105, 99, 89, 82, 76, 74, 60, 57] 
 
       }, {
           name: 'Repositories',
           color: '#89A54E',
           type: 'column',
-          data: [24, 12, 15, 33, 16, 32, 33, 10, 2, 47]
+          data: [24, 12, 15, 33, 16, 33, 32, 10, 2, 47]
       },
       {
           type: 'pie',
@@ -88,7 +88,7 @@ $ ->
               y: 1,
               color: Highcharts.getOptions().colors[6] 
           }]
-          center: [350, 70],
+          center: [350, 95],
           size: 100,
           showInLegend: false
       }]

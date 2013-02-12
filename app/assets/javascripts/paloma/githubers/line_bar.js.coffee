@@ -11,7 +11,7 @@ $ ->
           text: 'Source: dou.ua'
       },
       xAxis: [{
-          categories: ["Grigory Bakunov (bobuk)", "Fedor Indutny (indutny)", "Nicholas Semendyaev (Quarx2k)", "Sergey Chikuyonok (sergeche)", "Alexander Makarov (samdark)", "Max Lapshin (maxlapshin)", " Andrey Sitnik (ai)", " Nikita Vasilyev (NV)", "Yaroslav Markin (yaroslav)", "Vadim Makeev (pepelsbey)"]
+          categories: ["Grigory Bakunov (bobuk)", "Fedor Indutny (indutny)", "Sergey Chikuyonok (sergeche)", "Nicholas Semendyaev (Quarx2k)", "Alexander Makarov (samdark)", "Max Lapshin (maxlapshin)", " Andrey Sitnik (ai)", " Nikita Vasilyev (NV)", "Vadim Makeev (pepelsbey)", "Yaroslav Markin (yaroslav)"]
       }],
       yAxis: [{
           labels: {
@@ -53,13 +53,13 @@ $ ->
           color: '#4572A7',
           type: 'column',
           yAxis: 1,
-          data: [392, 370, 330, 330, 213, 209, 155, 150, 145, 144]
+          data: [461, 395, 344, 343, 228, 214, 169, 156, 155, 148]
 
       }, {
           name: 'Repositories',
           color: '#89A54E',
           type: 'column',
-          data: [16, 96, 43, 26, 27, 31, 23, 62, 12, 19] 
+          data: [16, 96, 26, 43, 27, 31, 23, 62, 19, 12] 
       },
       {
           type: 'pie',
@@ -101,7 +101,7 @@ $ ->
               y: 1,
               color: Highcharts.getOptions().colors[8] 
           }]
-          center: [400, 100],
+          center: [400, 85],
           size: 100,
           showInLegend: false
       }]
