@@ -13,5 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require highcharts
-//= require paloma 
 //= require_tree
