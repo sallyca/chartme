@@ -1,9 +1,0 @@
-//= require ./itheros_1
-//= require ./years
-//= require ./srjr
-//= require ./pribavka
-//= require ./other
-//= require ./goldenchart
-//= require ./gender
-//= require ./city
-//= require ./experience
