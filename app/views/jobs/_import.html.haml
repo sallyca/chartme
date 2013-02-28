@@ -1,0 +1,7 @@
+%h2 Import Jobs
+= form_tag import_jobs_path, multipart: true do
+  = file_field_tag :file
+  = submit_tag "Import"
+
+%br
+%br

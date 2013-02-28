@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  category: MyString
+  company: MyString
+  responses: 1
+  date: 2013-02-26 02:11:32
+  is_active: false
+
+two:
+  category: MyString
+  company: MyString
+  responses: 1
+  date: 2013-02-26 02:11:32
+  is_active: false

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Category:</b>
+  <%= @title.category %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @title.company %>
+</p>
+
+<p>
+  <b>Responses:</b>
+  <%= @title.responses %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @title.date %>
+</p>
+
+<p>
+  <b>Is active:</b>
+  <%= @title.is_active %>
+</p>
+
+
+<%= link_to 'Edit', edit_title_path(@title) %> |
+<%= link_to 'Back', titles_path %>

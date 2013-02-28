@@ -1,0 +1,31 @@
+#article
+  %h1
+    ="Рейтинг вакансий по откликам на jobs.dou.ua"
+  .text
+    =link_to "http://jobs.dou.ua/", "http://jobs.dou.ua/"
+  .text
+    ="За последние три месяца насобиралось порядка 1000 откликов на вакансии. Представляем здесь рейтинг 'горячих' вакансий, компаний, технологий."
+  .text
+    ="Лидерами рынка стали вакансии менеджмента и QA."
+  #rotated.chart{:style => "width: 860px; height: 500px;"}
+  .text
+    ="Больше всего компании предлагают работы для специализаций QA, .NET, Java, PHP, C++:"
+  #grouped.chart{:style => "width: 860px; height: 500px;"}
+  .text
+    ="Если рассматривать самые популярные специализации, то с среднем отклики выглядят так:"
+  #average.chart{:style => "width: 860px; height: 300px;"}
+  .text
+    ="Если рассматривать специализации, которые в принципе получили отклики:"
+  #average_cat.chart{:style => "width: 860px; height: 400px;"}
+  .text
+    ="Теперь по компаниям. Больше всего вакансий предлагают кампании:"
+  #pie_comp.chart{:style => "width: 860px; height: 500px;"}
+  .text
+    ="Спрос на вакансии выглядит вот так:"
+  #average_comp.chart{:style => "width: 860px; height: 200px;"}
+  .text
+    ="А больше всего откликов получили в основном компании из категории Other:"
+  #average_comp_top.chart{:style => "width: 860px; height: 400px;"}
+  #line_bar.chart{:style => "width: 860px; height: 500px;display:none;"}
+  #line_bar_ua.chart{:style => "width: 860px; height: 500px;display:none;"}
+  #line_bar_bel.chart{:style => "width: 860px; height: 500px;display:none;"}

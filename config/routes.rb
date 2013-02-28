@@ -1,5 +1,13 @@
 Chartme::Application.routes.draw do
 
+  resources :jobs do
+    collection { post :import }
+  end
+
+
+  resources :titles
+
+
   resources :githubers do
     collection { post :import }
   end

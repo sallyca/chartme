@@ -1,0 +1,31 @@
+<h1>Listing titles</h1>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Company</th>
+    <th>Responses</th>
+    <th>Date</th>
+    <th>Is active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @titles.each do |title| %>
+  <tr>
+    <td><%= title.category %></td>
+    <td><%= title.company %></td>
+    <td><%= title.responses %></td>
+    <td><%= title.date %></td>
+    <td><%= title.is_active %></td>
+    <td><%= link_to 'Show', title %></td>
+    <td><%= link_to 'Edit', edit_title_path(title) %></td>
+    <td><%= link_to 'Destroy', title, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Title', new_title_path %>

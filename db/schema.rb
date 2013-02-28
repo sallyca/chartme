@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130208142003) do
+ActiveRecord::Schema.define(:version => 20130226231012) do
 
   create_table "githubers", :force => true do |t|
     t.string   "contributions"
@@ -49,6 +49,29 @@ ActiveRecord::Schema.define(:version => 20130208142003) do
     t.string   "nothing"
     t.integer  "year"
     t.string   "currency"
+  end
+
+  create_table "jobs", :force => true do |t|
+    t.string   "title"
+    t.string   "category"
+    t.string   "company"
+    t.integer  "responses"
+    t.datetime "date"
+    t.boolean  "is_active"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "city"
+    t.string   "datestr"
+  end
+
+  create_table "titles", :force => true do |t|
+    t.string   "category"
+    t.string   "company"
+    t.integer  "responses"
+    t.datetime "date"
+    t.boolean  "is_active"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
